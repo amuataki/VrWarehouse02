@@ -14,7 +14,8 @@ public class ConveyorBelt : MonoBehaviour
         GameObject obj = other.gameObject;
         transform.Translate(Vector3.right * speed * Time.deltaTime);
         if (transform.position.x >= stepsize)
-        { transform.position = new Vector3(0,transform.position.y, transform.position.z);
+        {
+            transform.position = new Vector3(0, transform.position.y, transform.position.z);
         }
         if (obj.tag == "belt1")
         {
