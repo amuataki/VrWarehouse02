@@ -42,14 +42,15 @@ public class PlayVideo : MonoBehaviour
 
     private void Start()
     {
-        if (playAtStart)
-        {
-            Play();
-        }
-        else
-        {
-            Stop();
-        }
+        /* if (playAtStart)
+         {
+             Play();
+         }
+         else
+         {
+             Stop();
+         }*/
+        Stop();
     }
 
     public void NextClip()

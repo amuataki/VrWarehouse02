@@ -19,6 +19,7 @@ public class ConveyorBelt : MonoBehaviour
         }
         if (obj.tag == "belt1")
         {
+            
             other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, speed * Time.deltaTime);
         }
     }
